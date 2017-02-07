@@ -52,16 +52,18 @@ int main(){
     }
 
     //primera placa
-    if(m>=(int)((L/2-d/2)/h)):
+    if(m>=(int)((L/2-d/2)/h)){
       for(i=(int)((L/2-l/2)/h); i<(int)((L/2+l/2)/h); i++){
 	matriz[i][(int)((L/2-d/2)/h)] = -V0/2;
       }
+    }
     
     //segunda placa
-    if(m>=(int)((L/2+d/2)/h)):
+    if(m>=(int)((L/2+d/2)/h)){
       for(i=(int)((L/2-l/2)/h); i<(int)((L/2+l/2)/h); i++){
 	matriz[i][(int)((L/2+d/2)/h)] = V0/2;
       }
+    }
 
 
     //imprime la matriz
@@ -105,16 +107,18 @@ int main(){
     }
 
     //primera placa
-    if(pos_placa1 >= 0):
+    if(pos_placa1 >= 0){
       for(i=(int)((L/2-l/2)/h); i<(int)((L/2+l/2)/h); i++){
 	matriz[i][pos_placa1] = -V0/2;
       }
+    }
     
     //segunda placa
-    if(pos_placa2 >= 0):
+    if(pos_placa2 >= 0){
       for(i=(int)((L/2-l/2)/h); i<(int)((L/2+l/2)/h); i++){
 	matriz[i][pos_placa2] = V0/2;
       }
+    }
 
     //imprime la matriz
     printf("%d\n", rank);
@@ -152,16 +156,18 @@ int main(){
     }
 
     //primera placa
-    if(pos_placa1 >= 0 && pos_placa1 < m):
+    if(pos_placa1 >= 0 && pos_placa1 < m){
       for(i=(int)((L/2-l/2)/h); i<(int)((L/2+l/2)/h); i++){
 	matriz[i][pos_placa1] = -V0/2;
       }
+    }
     
     //segunda placa
-    if(pos_placa2 >= 0 && pos_placa2 < m):
+    if(pos_placa2 >= 0 && pos_placa2 < m){
       for(i=(int)((L/2-l/2)/h); i<(int)((L/2+l/2)/h); i++){
 	matriz[i][pos_placa2] = V0/2;
       }
+    }
 
     //imprime la matriz
     printf("%d\n", rank);
